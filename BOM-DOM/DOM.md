@@ -28,3 +28,16 @@
 
 - ``.getElementById('id')``
 - ``.querySelector('css selector')``
+
+## Methods that return one or more elements as a nodelist
+
+- ``.getElementByClassName('class')``
+- ``.getElementByTagName('h1')``
+- ``.querySelectorAll('li[id]')``
+
+    Nodelist: is a collection of elements node, each node is given and index nuber just like in array.
+
+    ### Nodelist methods:
+
+    - ``.item('index')``
+    - ``.length()``
