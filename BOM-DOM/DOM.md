@@ -10,34 +10,61 @@
 
         DOM querries are the elements node in the DOM
 
-## Properties
+---
+## 0. DOM Properties and Methods:
+
+### 0.1. **Properties**
 - ``document.title`` 
 - ``document.lastModified`` 
 - ``document.URL`` 
 - ``document.domain`` 
 
-## Methods
+### 0.2. **Methods to create and remove**
 - ``document.write()`` 
 - ``document.getElementById()`` 
 - ``document.querySelectorAll()`` 
 - ``document.createElement()`` 
 - ``document.createTextNode()`` 
+ 
 
-
-## Methods that return a single element node
+### 0.2.1. **Methods that return a single element node**
 
 - ``.getElementById('id')``
 - ``.querySelector('css selector')``
 
-## Methods that return one or more elements as a nodelist
+### 0.2.2.**Methods that return one or more elements as a nodelist**
 
 - ``.getElementByClassName('class')``
 - ``.getElementByTagName('h1')``
 - ``.querySelectorAll('li[id]')``
 
-    Nodelist: is a collection of elements node, each node is given and index nuber just like in array.
+    **Nodelist: is a collection of elements node, each node is given and index nuber just like in array.**
 
-    ### Nodelist methods:
+### 0.2.3. **Nodelist methods:**
 
-    - ``.item('index')``
-    - ``.length()``
+- ``.item('index')``
+- ``.length()``
+
+---
+There are two ways to add and remove contect from a DOM tree:
+
+## 1. innerHTML
+
+The innerHTML Property is either used to retrieve and replace contenct.
+You can access to the contets of an element and return it as a long string.
+Also you can change the content when you set a new string to a element of the tree DOM.
+
+
+- Get Content:
+```javascript
+const information = document.getElementById('one').innerHTML;
+```
+-Set Content:
+```javascript
+document.getelementById('one').innerHTML = newInformation;
+```
+
+## 2. DOM Manipulation
+
+
+
