@@ -83,7 +83,8 @@ firstItem.innerHTML = '<a href=\"http://example.org\">' + contenct + '</a>';
 ### 2.1. The way to manipulate/add to the DOM involves three steps:
 1. Create element node: ``createElement()``
 2. Give it content: ``createTextNode()``
-3. Add it to the DOM: ``appendChild()`` or ``insertBefore()``
+3. Add it to the DOM: ``appendChild()`` -- to add an element as child of other one 
+                        ``insertBefore()``
 
 **EXAMPLE of Add:**
 ```javascript
@@ -117,4 +118,50 @@ containerElement.removeChild(element);
 
 ## 3. Check, create, change and remove Attributes
 
-### 3.1. Check Attributes and get its values
+HTML elements have attributes as: ``class``, ``id``, ``href``, ``lang``, ``title``.
+
+### Methods:
+- ``getAttribute()``
+- ``hasAttriute()``
+- ``setAttribute()``
+- ``removeAttribute()``
+
+### Property:
+- ``className``
+- ``id``
+
+### 3.1. Check Attributes and get its values - hasAttribute()
+
+Before work with an attribute, it is a good practice to check it:
+
+**Example:**
+```javascript
+const firstItem = document.getElementById('one');
+if (firstItem.hasAttribute('class')){
+        const firstItemAttribute = firstItem.getAttribute('class');
+}
+//Do something with the attribute, in this case show in the window:
+const element = document.getElementById('ending');
+elemente.innerHTML = '<p> The class of the first item is: ' + firstItemAttribute + '</p>';
+```
+
+### 3.2. Create attributes and change their values:
+**EXAMPLE:**
+```javascript
+//Change the class/id attribute:
+const firstItem = document.getElementById('one');
+firstItem.className = 'complete';
+
+//Create a new attribute:
+const secondItem = document.getElementByTagName('li').item(2);
+secondItem.setAttribute('class', 'toDo');
+```
+
+### 3.3. Removing attributes:
+**EXAMPLE:**
+```javascript
+const firstItem = document.getElementById('one');
+if(firstItem.hasAttribute('class')){
+        firstItem.removeAttribute('class');
+}
+```      	
