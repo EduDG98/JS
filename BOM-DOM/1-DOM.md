@@ -88,7 +88,7 @@ firstItem.innerHTML = '<a href=\"http://example.org\">' + contenct + '</a>';
 
 **EXAMPLE of Add:**
 ```javascript
-//Createa the new element node:
+//Create the new element node:
 const newElement = documente.createElment('li');
 //Create the text node:
 const newText = document.createTextNode('hey');
