@@ -10,7 +10,7 @@ When we click in each div we can see in the browser console with which div are w
 These are 'Bubble Events':
 the first event to fire is the internal one and go to outside:    Child -> Parent -> Grand -> Doc
  */
-/* document.addEventListener('click', () => {
+document.addEventListener('click', () => {
     console.log('Document 1')
 })
 
@@ -24,7 +24,7 @@ parent.addEventListener('click', () => {
 
 child.addEventListener('click', () => {
     console.log('Child 1')
-}) */
+})
 
 //-------------------------------------------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ To avoid Bubbling events we have to capture with the third argument of addEventL
 In the console we can see that the first event to fire is:  Grand -> Child -> Parent -> Doc
 If we active the caputre in all the elements they will fire as:     Doc -> Grand -> Parent -> Child
  */
-/* document.addEventListener('click', () => {
+document.addEventListener('click', () => {
     console.log('Document Bubble')
 })
 
@@ -47,7 +47,7 @@ parent.addEventListener('click', () => {
 
 child.addEventListener('click', () => {
     console.log('Child Bubble')
-}) */
+})
 
 //-------------------------------------------------------------------------------------------------------------
 
@@ -55,18 +55,25 @@ child.addEventListener('click', () => {
 To call a function when the event is fire
 Also to remove it passing some time
 */
-/* const printSalude = text => console.log('Hey mate');
+const printSalude = text => console.log('Hey mate');
 
 child.addEventListener('click', printSalude)
 
 setTimeout(() => {
     child.removeEventListener('click', printSalude)
 }, 2000)
- */
+
 
 //-------------------------------------------------------------------------------------------------------------
 
 /* THEORY:
-The Event Object: 
-
+The Event Object: when a event occurs it begans to the Event Object
+With target we cna select a specific element. Also mactches is an method
+which return true is the element is 'click' in this case 
 */
+
+document.addEventListener('click', e => {
+    if (e.target.matches('div')) {
+        console.log('Eooo')
+    }
+}, false)
