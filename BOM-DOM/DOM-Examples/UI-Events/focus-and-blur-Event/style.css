@@ -21,7 +21,7 @@ h2 {
     align-items: center;
 }
 
-/* warming */
+/* warming of username with less than 5 characters */
 #feedback {
     margin: 4px;
 }
@@ -75,4 +75,30 @@ input[type='submit'] {
 input:focus {
     transition: 100ms linear;
     transform: scale(1.04);
+}
+
+/* System Maintenance message with close cross*/
+#note {
+    width: 60%;
+    top: 1em;
+    left: 15%;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    background-color: #000;
+    color: #FFF;
+    opacity: 0.8;
+    box-shadow: 20px 20px 50px 10px rgb(77, 73, 74) inset;
+    border-radius: 5px;
+}
+
+#note .header a {
+
+    color: rgb(78, 206, 27)
 }
