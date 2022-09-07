@@ -1,0 +1,35 @@
+* {
+    color: whitesmoke
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+#page {
+    background-color: black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr 1fr;
+    justify-content: center;
+    gap: 1em;
+    max-height: 250px;
+    padding: 1em;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 17px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
