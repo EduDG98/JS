@@ -1,0 +1,28 @@
+* {
+    border: 1px solid salmon;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h2 {
+    margin: auto;
+}
+
+form {
+    margin: auto;
+    background-color: #1C6758;
+
+    display: grid;
+    gap: 1em;
+}
+
+.selector-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    font-size: larger;
+}
+
+.selector-container option {
+    background-color: cadetblue;
+}
