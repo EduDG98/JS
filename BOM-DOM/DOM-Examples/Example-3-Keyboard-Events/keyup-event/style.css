@@ -1,0 +1,43 @@
+html {
+    background-color: #2f2f2f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    background-color: cornflowerblue;
+    padding: 3em;
+    border-radius: 10px;
+}
+
+h2 {}
+
+.wrapper-note {
+
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    overflow: auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 10px;
+}
+
+form:hover {
+    transform: scale(1.08);
+    transition-duration: 1s;
+
+}
